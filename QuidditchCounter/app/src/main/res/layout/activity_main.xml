@@ -1,0 +1,153 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gryffindor"
+                android:textAllCaps="true"
+                android:padding="4dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="70dp"
+                android:padding="4dp"
+                android:gravity="center"
+                android:id="@+id/marcadorGr"
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quaffle"
+                android:layout_margin="8dp"
+                android:onClick="QuaffleGr"
+                android:background="#42A5F5"
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bludger"
+                android:layout_margin="8dp"
+                android:onClick="BludgerGr"
+                android:background="#42A5F5"
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snitch"
+                android:layout_margin="8dp"
+                android:onClick="SnitchGr"
+                android:background="#42A5F5"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="slitherine"
+                android:textAllCaps="true"
+                android:padding="4dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="70dp"
+                android:padding="4dp"
+                android:id="@+id/marcadorSl"
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quaffle"
+                android:layout_margin="8dp"
+                android:onClick="QuaffleSl"
+                android:background="#42A5F5"
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bludger"
+                android:layout_margin="8dp"
+                android:onClick="BludgerSl"
+                android:background="#42A5F5"
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snitch"
+                android:layout_margin="8dp"
+                android:onClick="SnitchSl"
+                android:background="#42A5F5"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#42A5F5"
+        android:layout_marginBottom="10dp"
+        android:onClick="reset"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turnos"
+        android:id="@+id/turnos_text_view"/>
+
+</RelativeLayout>
