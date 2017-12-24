@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
     int puntuacionGr;
@@ -60,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void BludgerGr(View view){
         Random random = new Random();
-        int numeroAleatorio = random.nextInt(5);
-        if(numeroAleatorio == 0){
+        int numeroAleatorio = random.nextInt(4);
+        if(numeroAleatorio <= 1){
             if(puntuacionSl > 0){
                 puntuacionSl -= 10;
             }
@@ -119,18 +120,31 @@ public class MainActivity extends AppCompatActivity {
             marcadorSl.setText("-");
             marcadorGr.setText("-");
         }
+        //resetear();
     }
 
     private void actualizarTurnos(){
         turnosView.setText(stringTurno + " " + turnos);
+        if(turnos <= 0){
+            terminarPartido();
+        }
     }
 
+    /*public void resetear(){
+        puntuacionGr = 0;
+        puntuacionSl = 0;
+        actualizarSl();
+        actualizarGr();
+        turnos = 20;
+        actualizarTurnos();
+    }
+    */
     public void  reset(View view){
         puntuacionGr = 0;
         puntuacionSl = 0;
         actualizarSl();
         actualizarGr();
-        turnos = 10;
+        turnos = 20;
         actualizarTurnos();
     }
 }
