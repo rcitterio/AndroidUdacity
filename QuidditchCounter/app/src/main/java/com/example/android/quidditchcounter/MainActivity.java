@@ -49,56 +49,80 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void QuaffleGr(View view){
-        puntuacionGr += 10;
-        actualizarGr();
+        if(this.turnos <= 0){
+            reset(view);
+        }else {
+            puntuacionGr += 10;
+            actualizarGr();
+        }
     }
 
     public void QuaffleSl(View view){
-        puntuacionSl += 10;
-        actualizarSl();
+        if(this.turnos <= 0){
+            reset(view);
+        }else {
+            puntuacionSl += 10;
+            actualizarSl();
+        }
     }
 
 
     public void BludgerGr(View view){
-        Random random = new Random();
-        int numeroAleatorio = random.nextInt(4);
-        if(numeroAleatorio <= 1){
-            if(puntuacionSl > 0){
-                puntuacionSl -= 10;
+        if(this.turnos <= 0){
+            reset(view);
+        }else {
+            Random random = new Random();
+            int numeroAleatorio = random.nextInt(3);
+            if (numeroAleatorio <= 1) {
+                if (puntuacionSl > 0) {
+                    puntuacionSl -= 10;
+                }
             }
+            actualizarSl();
         }
-        actualizarSl();
     }
 
     public void BludgerSl(View view){
-        Random random = new Random();
-        int numeroAleatorio = random.nextInt(5);
-        if(numeroAleatorio == 0){
-            if(puntuacionGr > 0){
-                puntuacionGr -= 10;
+        if(this.turnos <= 0){
+            reset(view);
+        }else {
+            Random random = new Random();
+            int numeroAleatorio = random.nextInt(3);
+            if (numeroAleatorio <= 1) {
+                if (puntuacionGr > 0) {
+                    puntuacionGr -= 10;
+                }
             }
+            actualizarGr();
         }
-        actualizarGr();
     }
 
     public void SnitchGr(View view){
-        Random random = new Random();
-        int numeroAleatorio = random.nextInt(9);
-        if(numeroAleatorio == 0){
-            ganadorGr();
+        if(this.turnos <= 0){
+            reset(view);
+        }else{
+            Random random = new Random();
+            int numeroAleatorio = random.nextInt(9);
+            if (numeroAleatorio == 0) {
+                ganadorGr();
+            }
+            turnos--;
+            actualizarTurnos();
         }
-        turnos--;
-        actualizarTurnos();
     }
 
     public void SnitchSl(View view){
-        Random random = new Random();
-        int numeroAleatorio = random.nextInt(9);
-        if(numeroAleatorio == 0){
-            ganadorSl();
+        if(this.turnos <= 0){
+            reset(view);
+        }else{
+            Random random = new Random();
+            int numeroAleatorio = random.nextInt(9);
+            if (numeroAleatorio == 0) {
+                ganadorSl();
+            }
+            turnos--;
+            actualizarTurnos();
         }
-        turnos--;
-        actualizarTurnos();
     }
 
     public void ganadorGr(){
