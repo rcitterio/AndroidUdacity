@@ -1,4 +1,4 @@
-package com.example.android.quidditchcounter;
+package com.example.android.quidditchapp;
 
 import org.junit.Test;
 

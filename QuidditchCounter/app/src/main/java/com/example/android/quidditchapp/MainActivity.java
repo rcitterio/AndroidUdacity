@@ -1,9 +1,11 @@
-package com.example.android.quidditchcounter;
+package com.example.android.quidditchapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.android.quidditchapp.R;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -15,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     TextView marcadorSl;
     int turnos;
     TextView turnosView;
-    String stringTurno = "Turnos: ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         marcadorGr = (TextView) findViewById(R.id.marcadorGr);
         turnos = 20;
         turnosView = (TextView) findViewById(R.id.turnos_text_view);
-        turnosView.setText(stringTurno + " " + turnos);
+        turnosView.setText(getResources().getString(R.string.turns) + " " + turnos);
     }
 
     private void actualizarGr() {
@@ -126,13 +127,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ganadorGr(){
-        marcadorGr.setText("W");
-        marcadorSl.setText("D");
+        marcadorGr.setText(getResources().getString(R.string.win));
+        marcadorSl.setText(getResources().getString(R.string.defeat));
     }
 
     public void ganadorSl(){
-        marcadorGr.setText("D");
-        marcadorSl.setText("W");
+        marcadorGr.setText(getResources().getString(R.string.defeat));
+        marcadorSl.setText(getResources().getString(R.string.win));
     }
 
     private void terminarPartido(){
@@ -141,14 +142,14 @@ public class MainActivity extends AppCompatActivity {
         }else if( puntuacionSl > puntuacionGr){
             ganadorSl();
         }else{
-            marcadorSl.setText("-");
-            marcadorGr.setText("-");
+            marcadorSl.setText(getResources().getString(R.string.barra));
+            marcadorGr.setText(getResources().getString(R.string.barra));
         }
         //resetear();
     }
 
     private void actualizarTurnos(){
-        turnosView.setText(stringTurno + " " + turnos);
+        turnosView.setText(getResources().getString(R.string.turns) + " " + turnos);
         if(turnos <= 0){
             terminarPartido();
         }
