@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class Nivel4_2 extends AppCompatActivity {
 
     @Override
@@ -16,15 +18,24 @@ public class Nivel4_2 extends AppCompatActivity {
 
 
     public void onClickSidney(View view) {
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
-        Toast toast1 = Toast.makeText(getApplicationContext(), "CONGRATULATIONS!!", Toast.LENGTH_SHORT);
-        toast1.show();
+        finish();
+        if(Locale.getDefault().getLanguage() == "es") {
+            Toast toast1 = Toast.makeText(getApplicationContext(), "ENHORABUENA!!", Toast.LENGTH_SHORT);
+            toast1.show();
+        }else {
+            Toast toast1 = Toast.makeText(getApplicationContext(), "CONGRATULATIONS!!", Toast.LENGTH_SHORT);
+            toast1.show();
+        }
     }
 
     public void onClickFail(View view){
-        Toast toast1 = Toast.makeText(getApplicationContext(), "Fail! Try Again", Toast.LENGTH_SHORT);
-        toast1.show();
+        if(Locale.getDefault().getLanguage() == "es") {
+            Toast toast1 = Toast.makeText(getApplicationContext(), "Fallastes! Prueba otra vez", Toast.LENGTH_SHORT);
+            toast1.show();
+        }else {
+            Toast toast1 = Toast.makeText(getApplicationContext(), "Fail! Try Again", Toast.LENGTH_SHORT);
+            toast1.show();
+        }
     }
 
 }

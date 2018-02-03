@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class Nivel4 extends AppCompatActivity {
 
     @Override
@@ -17,11 +19,16 @@ public class Nivel4 extends AppCompatActivity {
     public void onClickMadrid(View view){
         Intent intent = new Intent(this,activity_nivel4_1.class);
         startActivity(intent);
-
+        finish();
     }
 
     public void onClickFail(View view){
-        Toast toast1 = Toast.makeText(getApplicationContext(), "Fail! Try Again", Toast.LENGTH_SHORT);
-        toast1.show();
+        if(Locale.getDefault().getLanguage() == "es") {
+            Toast toast1 = Toast.makeText(getApplicationContext(), "Fallastes! Prueba otra vez", Toast.LENGTH_SHORT);
+            toast1.show();
+        }else {
+            Toast toast1 = Toast.makeText(getApplicationContext(), "Fail! Try Again", Toast.LENGTH_SHORT);
+            toast1.show();
+        }
     }
 }

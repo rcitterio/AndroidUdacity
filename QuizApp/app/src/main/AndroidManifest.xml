@@ -9,19 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:configChanges="screenSize|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Nivel1" />
-        <activity android:name=".Nivel2" />
-        <activity android:name=".Nivel3" />
-        <activity android:name=".Nivel4" />
-        <activity android:name=".activity_nivel4_1" />
-        <activity android:name=".Nivel4_2"></activity>
+        <activity android:name=".Nivel1" android:configChanges="screenSize|orientation"/>
+        <activity android:name=".Nivel2" android:configChanges="screenSize|orientation"/>
+        <activity android:name=".Nivel3" android:configChanges="screenSize|orientation"/>
+        <activity android:name=".Nivel4" android:configChanges="screenSize|orientation"/>
+        <activity android:name=".activity_nivel4_1" android:configChanges="screenSize|orientation"/>
+        <activity android:name=".Nivel4_2" android:configChanges="screenSize|orientation"></activity>
     </application>
 
 </manifest>

@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.quizapp.Nivel4">
 
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="310dp"
@@ -43,7 +45,7 @@
         android:layout_height="0dp"
         android:layout_marginEnd="96dp"
         android:layout_marginTop="64dp"
-        android:text="@string/Seul"
+        android:text="@string/Seoul"
         android:onClick="onClickFail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
@@ -82,4 +84,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:layout_constraintVertical_bias="0.0"
         android:layout_marginRight="96dp" />
+
 </android.support.constraint.ConstraintLayout>
+
+
+

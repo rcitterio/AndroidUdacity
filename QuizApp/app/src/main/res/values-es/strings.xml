@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="level1">nivel 1</string>
+    <string name="level2">nivel 2</string>
+    <string name="level3">nivel 3</string>
+    <string name="level4">nivel 4</string>
+    <string name="p11">¿Cuál es la capital de España?</string>
+    <string name="p12">¿Cuál es la capital de Francia?</string>
+    <string name="Seoul">Seúl</string>
+    <string name="puntuacion">Tu puntuación es</string>
+    <string name="Rome">Roma</string>
+    <string name="Mexico">Méjico DF</string>
+    <string name="Morocco">Marruecos</string>
+    <string name="Noruega">Noruega</string>
+    <string name="Peking">Pekín</string>
+    <string name="London">Londres</string>
+    <string name="Paris">París</string>
+    <string name="Munich">Múnich</string>
+    <string name="malaga">Málaga</string>
+    <string name="dublin">Dublín</string>
+    <string name="p24">¿Cuál es la capital de Italia?</string>
+    <string name="p23">¿Cuál es la capital de Méjico?</string>
+    <string name="p22">¿Cuál es la capital de Corea del Sur?</string>
+    <string name="p21">¿Cuál es la capital de Irlanda?</string>
+    <string name="p17">¿Cuál es la capital de China?</string>
+    <string name="p16">¿Cuál es la capital de Inglaterra?</string>
+    <string name="p15">¿Cuál es la capital de Estados Unidos?</string>
+    <string name="p13">¿Cuál es la capital de Portugal?</string>
+    <string name="p14">¿Cuál es la capital de Brasil?</string>
+</resources>

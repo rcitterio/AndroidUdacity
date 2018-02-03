@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class Nivel1 extends AppCompatActivity {
     RadioButton respuesta1;
     RadioButton respuesta2;
@@ -67,16 +69,28 @@ public class Nivel1 extends AppCompatActivity {
 
     private void mostrarResultado(){
         if(puntuacion == 7){
-            Intent intent = new Intent(this,MainActivity.class);
-            startActivity(intent);
-            Toast toast1 = Toast.makeText(getApplicationContext(), "CONGRATULATIONS!! LEVEL 1 PASSED", Toast.LENGTH_SHORT);
-            toast1.show();
+            setResult(RESULT_OK);
+            finish();
+            if(Locale.getDefault().getLanguage() == "es") {
+                Toast toast1 = Toast.makeText(getApplicationContext(), "FELICIDADES!! NIVEL 1 COMPLETADO", Toast.LENGTH_SHORT);
+                toast1.show();
+            }else {
+                Toast toast1 = Toast.makeText(getApplicationContext(), "CONGRATULATIONS!! LEVEL 1 PASSED", Toast.LENGTH_SHORT);
+                toast1.show();
+            }
         }else{
             int fallos = 7- puntuacion;
             String fallosString = String.valueOf(fallos);
-            Toast toast1 = Toast.makeText(getApplicationContext(), "You have: " + fallosString + " failures", Toast.LENGTH_SHORT);
-            toast1.show();
+            if(Locale.getDefault().getLanguage() == "es") {
+                Toast toast1 = Toast.makeText(getApplicationContext(), "Tienes: " + fallosString + " fallos", Toast.LENGTH_SHORT);
+                toast1.show();
+            }else {
+                Toast toast1 = Toast.makeText(getApplicationContext(), "You have: " + fallosString + " failures", Toast.LENGTH_SHORT);
+                toast1.show();
+            }
             puntuacion = 0;
         }
     }
+
+
 }

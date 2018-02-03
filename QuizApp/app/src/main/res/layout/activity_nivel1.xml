@@ -14,69 +14,88 @@
         tools:context="com.example.android.quizapp.Nivel1">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height= "match_parent"
             android:orientation="vertical">
 
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p11"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/Pregunta1"
+                        />
+                    <RadioGroup
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/GrupoRadio1"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/unouno"
+                            android:text="@string/dublin"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_margin="6dp"
+                            android:layout_weight="1"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/unodos"
+                            android:text="@string/malaga"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_margin="6dp"
+                            android:layout_weight="1"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/unotres"
+                            android:text="@string/madrid"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_margin="6dp"
+                            android:layout_weight="1"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/unocuatro"
+                            android:text="@string/Munich"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_margin="6dp"
+                            android:layout_weight="1"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="3dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#B2DFDB"
-                android:orientation="vertical"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/p11"
-                    android:layout_centerInParent="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:textColor="@android:color/black"
-                    android:id="@+id/Pregunta1"
-                    />
-                <RadioGroup
-                    android:layout_marginTop="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:id="@+id/GrupoRadio1"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="5dp">
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/unouno"
-                        android:text="@string/dublin"
-                        android:layout_margin="6dp"
-                        />
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/unodos"
-                        android:text="@string/malaga"
-                        android:layout_margin="6dp"
-                        />
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/unotres"
-                        android:text="@string/madrid"
-                        android:layout_margin="6dp"
-                        />
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/unocuatro"
-                        android:text="@string/Munich"
-                        android:layout_margin="6dp"
-                        />
-                </RadioGroup>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#80CBC4"
                 android:orientation="vertical"
                 >
                 <TextView
@@ -86,7 +105,8 @@
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
                     android:id="@+id/Pregunta2"
                     />
                 <RadioGroup
@@ -98,40 +118,54 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="5dp">
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/dosuno"
                         android:text="@string/dublin"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
+                        android:layout_weight="1"
                         />
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/dosdos"
                         android:text="@string/malaga"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
+                        android:layout_weight="1"
                         />
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/dostres"
                         android:text="@string/madrid"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
+                        android:layout_weight="1"
                         />
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/doscuatro"
                         android:text="@string/Paris"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
+                        android:layout_weight="1"
                         />
                 </RadioGroup>
             </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="3dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#4DB6AC"
                 android:orientation="vertical"
                 >
                 <TextView
@@ -141,7 +175,8 @@
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
                     android:id="@+id/Pregunta3"
                     />
                 <RadioGroup
@@ -153,95 +188,124 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="5dp">
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/tresuno"
                         android:text="@string/Lisboa"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
+                        android:layout_weight="1"
                         />
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/tresdos"
-                        android:text="@string/Mexico"
+                        android:text="@string/Cuba"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
+                        android:layout_weight="1"
                         />
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/trestres"
-                        android:text="@string/Morocco"
+                        android:text="@string/Rome"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
+                        android:layout_weight="1"
                         />
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/trescuatro"
-                        android:text="@string/Seul"
+                        android:text="@string/Seoul"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
+                        android:layout_weight="1"
                         />
                 </RadioGroup>
             </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="3dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#26A69A"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
+
                 <TextView
+                    android:id="@+id/Pregunta4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/p14"
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:textColor="@android:color/black"
-                    android:id="@+id/Pregunta4"
-                    />
+                    android:text="@string/p14"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"/>
+
                 <RadioGroup
-                    android:layout_marginTop="5dp"
+                    android:id="@+id/GrupoRadio4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:id="@+id/GrupoRadio4"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="5dp">
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/cuatrouno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
                         android:text="@string/Oslo"
-                        android:layout_margin="6dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimaryDark"
                         />
+
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/cuatrodos"
-                        android:text="@string/Bangladesh"
-                        android:layout_margin="6dp"
-                        />
-                    <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:text="@string/Acra"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <RadioButton
                         android:id="@+id/cuatrotres"
-                        android:text="@string/Munich"
-                        android:layout_margin="6dp"
-                        />
-                    <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/cuatrocuatro"
-                        android:text="@string/Brasilia"
                         android:layout_margin="6dp"
-                        />
+                        android:text="@string/Munich"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <RadioButton
+                        android:id="@+id/cuatrocuatro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:text="@string/Brasilia"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimaryDark"/>
                 </RadioGroup>
             </LinearLayout>
 
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="3dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#009688"
                 android:orientation="vertical"
                 >
                 <TextView
@@ -251,12 +315,13 @@
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
                     android:id="@+id/Pregunta5"
                     />
                 <RadioGroup
                     android:layout_marginTop="5dp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:id="@+id/GrupoRadio5"
@@ -267,20 +332,23 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/cincouno"
                         android:text="@string/Washington"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/cincodos"
-                        android:text="@string/Brasilia"
+                        android:text="@string/Paris"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/cincotres"
-                        android:text="@string/Munich"
+                        android:text="@string/Acra"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                     <RadioButton
@@ -288,15 +356,20 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/cincocuatro"
                         android:text="@string/Oslo"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                 </RadioGroup>
             </LinearLayout>
-
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="3dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#00897B"
                 android:orientation="vertical"
                 >
                 <TextView
@@ -306,7 +379,8 @@
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
                     android:id="@+id/Pregunta6"
                     />
                 <RadioGroup
@@ -321,14 +395,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/seisuno"
-                        android:text="@string/Ottawa"
+                        android:text="@string/Rome"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/seisdos"
-                        android:text="@string/HongKong"
+                        android:text="@string/Sidney"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                     <RadioButton
@@ -336,21 +412,29 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/seistres"
                         android:text="@string/London"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/seiscuatro"
                         android:text="@string/Paris"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                 </RadioGroup>
             </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="3dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#00796B"
                 android:orientation="vertical"
                 >
                 <TextView
@@ -360,7 +444,8 @@
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
                     android:id="@+id/Pregunta7"
                     />
                 <RadioGroup
@@ -376,6 +461,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/sieteuno"
                         android:text="@string/dublin"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                     <RadioButton
@@ -383,6 +469,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/sietedos"
                         android:text="@string/Peking"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                     <RadioButton
@@ -390,22 +477,31 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/sietetres"
                         android:text="@string/Oslo"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/sietecuatro"
                         android:text="@string/Ottawa"
+                        android:textColor="@color/colorPrimaryDark"
                         android:layout_margin="6dp"
                         />
                 </RadioGroup>
             </LinearLayout>
+
+            </android.support.v7.widget.CardView>
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Send"
-                android:onClick="onClick"/>
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:layout_margin="3dp"/>
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
